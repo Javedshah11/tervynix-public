@@ -2,7 +2,47 @@
 
 > A modern developer workspace for coding, terminals, runtime management, AI-assisted development, and deployment.
 
-Tervynix is an actively developed developer platform focused on creating a powerful environment where developers can write code, run applications, manage processes, inspect ports, work with terminals, and eventually use intelligent development tools from one workspace.
+<p align="center">
+  <strong>Code • Run • Debug • Manage • Deploy</strong>
+</p>
+
+Tervynix is an actively developed developer platform focused on creating a powerful environment where developers can write code, run applications, manage processes, inspect ports, work with terminals, and eventually use intelligent development tools from one connected workspace.
+
+---
+
+## Product Preview
+
+### Landing Experience
+
+<img src="./screenshots/landing-page.png" alt="Tervynix Landing Page" width="100%" />
+
+Tervynix presents a focused developer-first experience built around modern software engineering workflows.
+
+---
+
+### Developer Dashboard
+
+<img src="./screenshots/dashboard.png" alt="Tervynix Developer Dashboard" width="100%" />
+
+The dashboard provides a central view of projects, AI sessions, testing, deployments, workspace state, and developer actions.
+
+---
+
+### Project Management
+
+<img src="./screenshots/projects.png" alt="Tervynix Project Management" width="100%" />
+
+Create and manage development projects from one workspace while keeping project configuration and runtime context connected.
+
+---
+
+### Create Project
+
+<img src="./screenshots/create-project.png" alt="Tervynix Create Project" width="100%" />
+
+Tervynix supports structured project creation with development modes, frameworks, languages, visibility, and workspace configuration.
+
+---
 
 ## Current Status
 
@@ -12,78 +52,58 @@ Tervynix is currently under active development.
 
 - Monaco-powered code workspace
 - Project workspaces
-- Multi-file tabs
+- Multi-file tab management
 - Autosave
 - Integrated terminal
+- Multiple terminal sessions
 - Process management
 - Port management
+- Task discovery and execution
 - Runtime monitoring
 - Runtime history
-- Authentication and project ownership
+- Authentication
+- Project ownership protection
+- Realtime runtime communication
 
 ### In Development
 
-- NestJS + Fastify backend
-- PostgreSQL architecture
+- NestJS + Fastify backend architecture
+- PostgreSQL migration
+- Drizzle ORM integration
 - Realtime infrastructure
 - Runtime reliability improvements
-- AI development features
+- Windows PTY reliability
+- AI development capabilities
+- Backend domain separation
 
 ### Planned
 
-- Redis
+- Redis infrastructure
+- BullMQ background processing
 - Rust runtime agent
 - Cloud development environments
-- AI coding assistant
+- Workspace-aware AI assistant
 - Deployment tooling
 - Collaboration
+- Developer APIs
 - Extension ecosystem
-
-## Vision
-
-Tervynix aims to bring the essential parts of modern software development into one integrated workspace.
-
-**Code. Run. Debug. Manage. Deploy.**
-
-## Public Repository
-
-This repository is the official public hub for Tervynix.
-
-It contains:
-
-- Product information
-- Roadmap
-- Documentation
-- Screenshots
-- Development updates
-- Community discussions
-- Feature requests
-
-The main Tervynix application source code is maintained separately.
-
-## Roadmap
-
-See [ROADMAP.md](./ROADMAP.md)
-
-## Support Tervynix
-
-Tervynix is being independently developed.
-
-If you are interested in the project, you can help by:
-
-- ⭐ Starring the repository
-- Sharing Tervynix
-- Reporting bugs
-- Suggesting features
-- Joining discussions
-- Supporting future development
-
-## Project Status
-
-🚧 **Active Development**
-
-More updates, demos, documentation and early-access information are coming soon.
+- Observability and telemetry
 
 ---
 
-Built by **Javed Shah**
+## Developer Workspace
+
+The long-term goal of Tervynix is to provide developers with one environment for the complete development workflow.
+
+```text
+Code
+  ↓
+Run
+  ↓
+Debug
+  ↓
+Manage
+  ↓
+Collaborate
+  ↓
+Deploy
