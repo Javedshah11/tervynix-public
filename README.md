@@ -14,7 +14,7 @@ Tervynix is an actively developed developer platform focused on creating a power
 
 ### Landing Experience
 
-<img src="./screenshots/landing-page.png" alt="Tervynix Landing Page" width="100%" />
+<img src="./screenshots/landing-page(1).png" alt="Tervynix Landing Page" width="100%" />
 
 Tervynix presents a focused developer-first experience built around modern software engineering workflows.
 
@@ -22,7 +22,7 @@ Tervynix presents a focused developer-first experience built around modern softw
 
 ### Developer Dashboard
 
-<img src="./screenshots/dashboard.png" alt="Tervynix Developer Dashboard" width="100%" />
+<img src="./screenshots/dashboard(1).png" alt="Tervynix Developer Dashboard" width="100%" />
 
 The dashboard provides a central view of projects, AI sessions, testing, deployments, workspace state, and developer actions.
 
