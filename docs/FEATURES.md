@@ -1,144 +1,279 @@
-# Tervynix Features
+# Tervynix FAQ
 
-This document provides a public overview of the current and planned capabilities of Tervynix.
+This document answers common questions about Tervynix, its current development status, architecture, roadmap, and public repository.
+
+---
+
+## What is Tervynix?
+
+Tervynix is a developer workspace being built to bring coding, terminals, runtime management, project workflows, AI-assisted development, and deployment into one connected environment.
+
+The long-term workflow is:
+
+**Code → Run → Debug → Manage → Collaborate → Deploy**
+
+---
+
+## Is Tervynix finished?
+
+No.
 
 Tervynix is under active development.
 
-Status meanings:
+Some major foundations are already implemented, including:
 
-- ✅ Implemented
-- 🟡 In progress / being hardened
-- ⚪ Planned
-
----
-
-## Developer Workspace
-
-### Code Editor
-
-**Status: ✅ Implemented**
-
-Tervynix provides a Monaco-powered development workspace.
-
-Current capabilities include:
-
-- Monaco Editor
-- Multi-file editing
-- File tabs
-- Autosave
-- Manual save
-- Workspace persistence
-- Keyboard-driven workflows
-
----
-
-## Project Management
-
-**Status: ✅ Implemented**
-
-Current capabilities include:
-
-- Project creation
-- Project management
-- Authenticated project access
-- Project ownership protection
-- Workspace configuration
-
-Future project capabilities will expand as cloud workspaces and collaboration are introduced.
-
----
-
-## Integrated Terminal
-
-**Status: ✅ Implemented / 🟡 hardening**
-
-Tervynix includes an integrated terminal environment.
-
-Current capabilities include:
-
+- Monaco-powered code workspace
+- Project workspaces
+- Integrated terminal
 - Multiple terminal sessions
-- Terminal session management
-- Terminal reattachment
-- Shell process tracking
-- xterm.js-based terminal UI
-- PTY-backed runtime execution
-
-### Current Engineering Focus
-
-Terminal reliability work continues around:
-
-- PTY lifecycle handling
-- Windows ConPTY stability
-- Runtime cleanup
-- Terminal end-to-end testing
-
----
-
-## Process Management
-
-**Status: ✅ Implemented**
-
-Developers can manage running development processes from the workspace.
-
-Capabilities include:
-
-- Process discovery
-- Start processes
-- Stop processes
-- Restart processes
-- Runtime state tracking
-- Process lifecycle integration
-
----
-
-## Port Management
-
-**Status: ✅ Implemented**
-
-Tervynix can detect and manage development services running on local ports.
-
-Capabilities include:
-
-- Port discovery
-- Running-service visibility
-- Open-port workflows
-- Application preview access
-
----
-
-## Project Tasks
-
-**Status: ✅ Implemented**
-
-Tervynix supports project task discovery and execution.
-
-This allows developers to work with project-defined commands without constantly switching away from the development workspace.
-
----
-
-## Runtime Monitoring
-
-**Status: ✅ Implemented foundation**
-
-Runtime monitoring connects processes, terminals, ports, tasks, and runtime events.
-
-Capabilities currently include:
-
-- Runtime events
-- Runtime state
-- Process lifecycle information
-- Realtime runtime communication
+- Process management
+- Port management
+- Task execution
+- Runtime monitoring
 - Runtime history
+- Authentication
+- Project ownership protection
+- Realtime runtime communication
+
+Other parts are still being migrated, hardened, or planned.
 
 ---
 
-## Runtime History
+## Is this repository the full Tervynix source code?
 
-**Status: ✅ Current scoped implementation complete**
+This repository serves as the public development hub for Tervynix.
 
-Runtime History provides visibility into what happened inside a development environment over time.
+It focuses on:
 
-Validated capabilities include:
+- Product information
+- Screenshots
+- Architecture
+- Development progress
+- Roadmap
+- Engineering milestones
+- Public discussions
+- Contribution guidance
+
+The availability of this repository does not necessarily mean every internal Tervynix implementation component is publicly distributed here.
+
+---
+
+## Is Tervynix open source?
+
+Tervynix currently uses the licensing terms defined in the repository's [LICENSE](../LICENSE).
+
+Public visibility does not automatically mean unrestricted open-source usage.
+
+Review the license before copying, redistributing, modifying, or commercially using Tervynix materials.
+
+---
+
+## What technology does Tervynix use?
+
+Current and target technologies include:
+
+### Frontend
+
+- TypeScript
+- React
+- Next.js
+- Monaco Editor
+- xterm.js
+
+### Backend
+
+- NestJS
+- Fastify
+- TypeScript
+- Domain services
+- Repository abstractions
+
+### Persistence
+
+- PostgreSQL
+- Drizzle ORM
+
+MongoDB remains present in parts of the architecture during migration.
+
+### Realtime
+
+- WebSockets
+
+Future distributed infrastructure may include:
+
+- Redis
+- BullMQ
+
+### Runtime
+
+Current runtime infrastructure includes Node.js and PTY-based execution.
+
+A Rust runtime agent is planned for future performance-sensitive runtime operations.
+
+---
+
+## Why is Tervynix moving from MongoDB to PostgreSQL?
+
+The migration is intended to provide stronger relational modeling, predictable persistence behavior, typed access patterns, and clearer repository boundaries for the growing platform.
+
+The migration is incremental.
+
+Tervynix is not being completely rewritten just to change databases.
+
+---
+
+## Has PostgreSQL migration started?
+
+Yes.
+
+The migration is in progress.
+
+Runtime History is one area where PostgreSQL-backed behavior has already been implemented and validated.
+
+Current validation includes:
+
+- History ordering
+- Pagination
+- Retention
+- Duplicate protection
+- Recovery scoping
+
+The validated scope passed:
+
+- 22 focused tests
+- 8 real PostgreSQL tests
+- Targeted TypeScript typecheck
+- Targeted lint
+
+---
+
+## Why does Tervynix use repository contracts?
+
+Repository contracts separate application behavior from database implementations.
+
+Instead of application services depending directly on PostgreSQL or MongoDB, they can depend on an interface or contract.
+
+This makes migrations, testing, and future infrastructure changes safer and easier to reason about.
+
+---
+
+## Is NestJS already fully migrated?
+
+No.
+
+The NestJS and Fastify backend architecture is still being introduced incrementally.
+
+The objective is to move toward clearer domain boundaries without unnecessarily rebuilding working application behavior.
+
+---
+
+## Is Redis already implemented?
+
+Not as a production-complete Tervynix subsystem.
+
+Redis is part of the planned distributed infrastructure direction.
+
+Potential uses include:
+
+- Realtime coordination
+- Cross-instance communication
+- Distributed state
+- Caching where appropriate
+
+---
+
+## Is BullMQ implemented?
+
+Not yet as a completed subsystem.
+
+BullMQ is planned for background processing such as:
+
+- Long-running jobs
+- Deployment tasks
+- Workspace maintenance
+- Infrastructure operations
+- AI-related background work
+
+---
+
+## Does Tervynix use Rust?
+
+A dedicated Rust runtime agent is planned.
+
+The future Rust layer may handle:
+
+- Process management
+- Process-tree discovery
+- Signals
+- PTY operations
+- Port discovery
+- File-system monitoring
+- Runtime metrics
+- Resource monitoring
+
+The Rust agent is intended to operate behind a runtime abstraction.
+
+---
+
+## Does Tervynix already have AI features?
+
+AI-assisted development is part of the long-term platform direction.
+
+Planned capabilities include:
+
+- Repository-aware assistance
+- Workspace context
+- Code generation
+- Code explanation
+- Refactoring
+- Debugging
+- Multi-file understanding
+- Runtime-aware debugging
+- Code review
+- Documentation generation
+
+Planned AI features should not be interpreted as production-complete functionality.
+
+---
+
+## Will Tervynix support cloud development environments?
+
+That is part of the long-term roadmap.
+
+Possible capabilities include:
+
+- Cloud workspaces
+- Remote runtime execution
+- Persistent sessions
+- Remote terminals
+- Workspace synchronization
+- Resume and reconnect workflows
+- Application previews
+
+---
+
+## Will Tervynix support deployment?
+
+Deployment is part of the planned platform direction.
+
+Future capabilities may include:
+
+- Project deployment
+- Environment configuration
+- Deployment logs
+- Deployment status
+- Domain integration
+- Runtime monitoring
+
+---
+
+## What is Runtime History?
+
+Runtime History records important information about execution activity inside a Tervynix workspace.
+
+It is designed to help developers understand what happened previously during runtime operations.
+
+Current validated behavior includes:
 
 - Stable ordering
 - Pagination
@@ -146,10 +281,151 @@ Validated capabilities include:
 - Duplicate protection
 - Recovery scoping
 
-Latest validation:
+---
 
-```text
-22 focused tests passed
-8 real PostgreSQL tests passed
-Targeted TypeScript typecheck passed
-Targeted lint passed
+## What does recovery scoping mean?
+
+Tervynix avoids automatically assuming that historical execution records should be marked as interrupted during application startup.
+
+Recovery requires explicitly confirmed stopped execution identities.
+
+This helps protect runtime history from incorrect state changes.
+
+---
+
+## Why is Windows PTY / ConPTY mentioned in the documentation?
+
+Tervynix includes integrated terminal functionality, and PTY behavior can vary across operating systems.
+
+Windows ConPTY reliability is therefore treated as a dedicated engineering and testing concern rather than hidden as a generic terminal issue.
+
+---
+
+## Can I contribute to Tervynix?
+
+Yes, public feedback and appropriate contributions are welcome.
+
+Before contributing, read:
+
+- [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md)
+- [SECURITY.md](../SECURITY.md)
+- [LICENSE](../LICENSE)
+
+---
+
+## How do I report a bug?
+
+Use the GitHub Bug Report issue template.
+
+Please include:
+
+- Operating system
+- Environment information
+- Steps to reproduce
+- Expected behavior
+- Actual behavior
+- Relevant logs
+- Screenshots where useful
+
+Never include passwords, access tokens, API keys, private repository content, or database credentials.
+
+---
+
+## How do I suggest a feature?
+
+Use the GitHub Feature Request template.
+
+A useful feature proposal should explain:
+
+1. The developer problem
+2. The current limitation
+3. The desired outcome
+4. A possible solution
+5. Any important technical considerations
+
+---
+
+## Can I submit a pull request?
+
+Yes, subject to the project's contribution and licensing requirements.
+
+The repository includes a pull request template to help contributors document:
+
+- Purpose
+- Implementation details
+- Testing
+- Database impact
+- Runtime impact
+- Security impact
+- Backward compatibility
+
+---
+
+## Where can I see what is being worked on?
+
+See:
+
+- [Development Status](./DEVELOPMENT_STATUS.md)
+- [Roadmap](../ROADMAP.md)
+- [Changelog](../CHANGELOG.md)
+
+---
+
+## Where can I understand the architecture?
+
+See:
+
+- [Architecture](./ARCHITECTURE.md)
+- [Features](./FEATURES.md)
+- [Vision](../VISION.md)
+
+---
+
+## Can I sponsor or support Tervynix?
+
+Formal sponsorship options may be added later.
+
+For now, useful ways to support the project include:
+
+- Star the repository
+- Follow development
+- Share constructive feedback
+- Report reproducible bugs
+- Suggest well-defined features
+- Participate in GitHub Discussions
+
+---
+
+## Is the roadmap guaranteed?
+
+No.
+
+The roadmap represents the current direction of Tervynix.
+
+Priorities may change based on:
+
+- Engineering findings
+- Reliability requirements
+- Security requirements
+- Testing results
+- Platform constraints
+- User feedback
+- Product direction
+
+---
+
+## Where should I start?
+
+If you are new to Tervynix, read these in order:
+
+1. [README](../README.md)
+2. [Features](./FEATURES.md)
+3. [Development Status](./DEVELOPMENT_STATUS.md)
+4. [Roadmap](../ROADMAP.md)
+5. [Architecture](./ARCHITECTURE.md)
+6. [Vision](../VISION.md)
+
+---
+
+**Build with Tervynix.**
