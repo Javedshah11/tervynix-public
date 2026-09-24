@@ -1,11 +1,12 @@
 ---
-
-name: Bug Report
-about: Report a reproducible problem in Tervynix
-title: "[Bug]: "
-labels: bug
+name: "Bug Report"
+about: "Report a reproducible problem in Tervynix"
+title: "[Bug] "
+labels: "bug"
 assignees: ""
--------------
+---
+
+# Bug Report
 
 # Bug Report
 
