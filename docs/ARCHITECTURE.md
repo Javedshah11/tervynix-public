@@ -1,4 +1,31 @@
+<!-- TERVYNIX_ANIMATED_HEADER_START -->
+<div align="center">
+
 # Tervynix Architecture
+
+### Workspace → Services → Persistence → Runtime Infrastructure
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2400&pause=900&color=36BCF7&center=true&vCenter=true&width=950&lines=Next.js+%E2%86%92+NestJS+%2F+Fastify+%E2%86%92+Domain+Services;PostgreSQL+%2B+Drizzle+%E2%80%A2+WebSockets;Redis+%E2%80%A2+BullMQ+%E2%80%A2+Rust+Runtime+Agent;Migrate.+Validate.+Keep+the+platform+operational."
+  alt="Tervynix Architecture animated header"
+/>
+
+<br />
+
+<img src="https://img.shields.io/badge/Architecture-Modular-3178C6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Migration-Incremental-238636?style=for-the-badge" />
+
+<br /><br />
+
+<a href="../README.md">← Project Home</a> •
+<a href="./ARCHITECTURE.md">Architecture</a> •
+<a href="../ROADMAP.md">Roadmap</a>
+
+</div>
+
+---
+
+<!-- TERVYNIX_ANIMATED_HEADER_END -->
 
 This document describes the public high-level architecture and engineering direction of Tervynix.
 
@@ -413,3 +440,20 @@ The architectural goal is not simply to build another browser-based editor.
 Tervynix is being designed as a complete developer platform where editing, terminals, processes, runtimes, history, AI, infrastructure, and deployment can operate as parts of one connected system.
 
 The architecture will continue to evolve as implementation, testing, and real-world usage expose better design decisions.
+
+---
+
+<!-- TERVYNIX_ANIMATED_FOOTER_START -->
+<div align="center">
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=1200&color=36BCF7&center=true&vCenter=true&width=760&lines=Build+with+Tervynix.;One+workspace.+One+runtime.+One+developer+platform.;Code+%E2%86%92+Run+%E2%86%92+Debug+%E2%86%92+Manage"
+  alt="Build with Tervynix"
+/>
+
+<br />
+
+<a href="../README.md">← Back to Tervynix</a>
+
+</div>
+<!-- TERVYNIX_ANIMATED_FOOTER_END -->

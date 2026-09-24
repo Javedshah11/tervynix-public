@@ -1,4 +1,31 @@
-# Tervynix FAQ
+<!-- TERVYNIX_ANIMATED_HEADER_START -->
+<div align="center">
+
+# Tervynix Features
+
+### Current capabilities and future platform direction
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2400&pause=900&color=36BCF7&center=true&vCenter=true&width=950&lines=Editor+%E2%80%A2+Terminal+%E2%80%A2+Processes+%E2%80%A2+Ports;Runtime+History+%E2%80%A2+Realtime+%E2%80%A2+Authentication;AI+%E2%80%A2+Cloud+%E2%80%A2+Deployment+%E2%80%A2+Collaboration;One+connected+developer+workspace"
+  alt="Tervynix Features animated header"
+/>
+
+<br />
+
+<img src="https://img.shields.io/badge/Features-Developer%20Platform-3178C6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-Evolving-238636?style=for-the-badge" />
+
+<br /><br />
+
+<a href="../README.md">← Project Home</a> •
+<a href="./ARCHITECTURE.md">Architecture</a> •
+<a href="../ROADMAP.md">Roadmap</a>
+
+</div>
+
+---
+
+<!-- TERVYNIX_ANIMATED_HEADER_END -->
 
 This document answers common questions about Tervynix, its current development status, architecture, roadmap, and public repository.
 
@@ -429,3 +456,20 @@ If you are new to Tervynix, read these in order:
 ---
 
 **Build with Tervynix.**
+
+---
+
+<!-- TERVYNIX_ANIMATED_FOOTER_START -->
+<div align="center">
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=1200&color=36BCF7&center=true&vCenter=true&width=760&lines=Build+with+Tervynix.;One+workspace.+One+runtime.+One+developer+platform.;Code+%E2%86%92+Run+%E2%86%92+Debug+%E2%86%92+Manage"
+  alt="Build with Tervynix"
+/>
+
+<br />
+
+<a href="../README.md">← Back to Tervynix</a>
+
+</div>
+<!-- TERVYNIX_ANIMATED_FOOTER_END -->

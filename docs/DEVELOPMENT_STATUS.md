@@ -1,4 +1,31 @@
+<!-- TERVYNIX_ANIMATED_HEADER_START -->
+<div align="center">
+
 # Tervynix Development Status
+
+### Implemented, in progress, hardening, and planned
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2400&pause=900&color=36BCF7&center=true&vCenter=true&width=950&lines=Implemented+%E2%9C%85+%E2%80%A2+In+Progress+%F0%9F%9F%A1+%E2%80%A2+Planned+%E2%9A%AA;Runtime+History+PostgreSQL+Scope+%E2%80%94+Complete;22+Focused+Tests+%E2%80%A2+8+Real+PostgreSQL+Tests;Engineering+status+without+marketing+overclaim"
+  alt="Tervynix Development Status animated header"
+/>
+
+<br />
+
+<img src="https://img.shields.io/badge/Development-Active-238636?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Runtime%20History-Scoped%20Complete-3178C6?style=for-the-badge" />
+
+<br /><br />
+
+<a href="../README.md">← Project Home</a> •
+<a href="./ARCHITECTURE.md">Architecture</a> •
+<a href="../ROADMAP.md">Roadmap</a>
+
+</div>
+
+---
+
+<!-- TERVYNIX_ANIMATED_HEADER_END -->
 
 This document tracks the public engineering status of major Tervynix subsystems.
 
@@ -347,3 +374,20 @@ Tervynix development follows a simple rule:
 > Every architectural migration should leave the platform in a more testable, more explicit, and more reliable state without unnecessarily rebuilding working product behavior.
 
 This status document will evolve as engineering milestones are completed.
+
+---
+
+<!-- TERVYNIX_ANIMATED_FOOTER_START -->
+<div align="center">
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=1200&color=36BCF7&center=true&vCenter=true&width=760&lines=Build+with+Tervynix.;One+workspace.+One+runtime.+One+developer+platform.;Code+%E2%86%92+Run+%E2%86%92+Debug+%E2%86%92+Manage"
+  alt="Build with Tervynix"
+/>
+
+<br />
+
+<a href="../README.md">← Back to Tervynix</a>
+
+</div>
+<!-- TERVYNIX_ANIMATED_FOOTER_END -->

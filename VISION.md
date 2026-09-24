@@ -1,4 +1,31 @@
+<!-- TERVYNIX_ANIMATED_HEADER_START -->
+<div align="center">
+
 # Tervynix Vision
+
+### From developer workspace to complete developer platform
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2400&pause=900&color=36BCF7&center=true&vCenter=true&width=950&lines=One+Workspace.+One+Developer+Platform.;Code+%E2%86%92+Run+%E2%86%92+Debug+%E2%86%92+Manage+%E2%86%92+Deploy;Developer+Control+%E2%80%A2+Performance+%E2%80%A2+Reliability;Building+the+long-term+vision+of+Tervynix"
+  alt="Tervynix Vision animated header"
+/>
+
+<br />
+
+<img src="https://img.shields.io/badge/Vision-Long--Term-8B5CF6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-Evolving-238636?style=for-the-badge" />
+
+<br /><br />
+
+<a href="./README.md">← Project Home</a> •
+<a href="./docs/ARCHITECTURE.md">Architecture</a> •
+<a href="./ROADMAP.md">Roadmap</a>
+
+</div>
+
+---
+
+<!-- TERVYNIX_ANIMATED_HEADER_END -->
 
 ## What is Tervynix?
 
@@ -220,3 +247,20 @@ The platform will continue evolving through engineering, testing, feedback, and 
 ---
 
 **Build with Tervynix.**
+
+---
+
+<!-- TERVYNIX_ANIMATED_FOOTER_START -->
+<div align="center">
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=1200&color=36BCF7&center=true&vCenter=true&width=760&lines=Build+with+Tervynix.;One+workspace.+One+runtime.+One+developer+platform.;Code+%E2%86%92+Run+%E2%86%92+Debug+%E2%86%92+Manage"
+  alt="Build with Tervynix"
+/>
+
+<br />
+
+<a href="./README.md">← Back to Tervynix</a>
+
+</div>
+<!-- TERVYNIX_ANIMATED_FOOTER_END -->

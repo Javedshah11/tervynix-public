@@ -1,4 +1,31 @@
+<!-- TERVYNIX_ANIMATED_HEADER_START -->
+<div align="center">
+
 # Tervynix Code of Conduct
+
+### Professional communication. Constructive collaboration.
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2400&pause=900&color=36BCF7&center=true&vCenter=true&width=950&lines=Respect+Developers;Focus+on+Engineering;Build+Constructively;Keep+the+Tervynix+community+professional"
+  alt="Tervynix Code of Conduct animated header"
+/>
+
+<br />
+
+<img src="https://img.shields.io/badge/Community-Respectful-238636?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Standard-Professional-3178C6?style=for-the-badge" />
+
+<br /><br />
+
+<a href="./README.md">← Project Home</a> •
+<a href="./docs/ARCHITECTURE.md">Architecture</a> •
+<a href="./ROADMAP.md">Roadmap</a>
+
+</div>
+
+---
+
+<!-- TERVYNIX_ANIMATED_HEADER_END -->
 
 ## Our Commitment
 
@@ -208,3 +235,20 @@ Respect for developers.**
 ---
 
 Copyright © 2026 Javed Shah.
+
+---
+
+<!-- TERVYNIX_ANIMATED_FOOTER_START -->
+<div align="center">
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=1200&color=36BCF7&center=true&vCenter=true&width=760&lines=Build+with+Tervynix.;One+workspace.+One+runtime.+One+developer+platform.;Code+%E2%86%92+Run+%E2%86%92+Debug+%E2%86%92+Manage"
+  alt="Build with Tervynix"
+/>
+
+<br />
+
+<a href="./README.md">← Back to Tervynix</a>
+
+</div>
+<!-- TERVYNIX_ANIMATED_FOOTER_END -->
